@@ -7,11 +7,11 @@ Imports DevExpress.DataAccess
 Imports DevExpress.DashboardCommon
 
 Namespace WinViewer_DefaultParameterValues
-    Partial Public Class Dashboard1
-        Inherits DevExpress.DashboardCommon.Dashboard
+	Partial Public Class Dashboard1
+		Inherits DevExpress.DashboardCommon.Dashboard
 
-        Public Sub New()
-            InitializeComponent()
-        End Sub
-    End Class
+		Public Sub New()
+			InitializeComponent()
+		End Sub
+	End Class
 End Namespace
