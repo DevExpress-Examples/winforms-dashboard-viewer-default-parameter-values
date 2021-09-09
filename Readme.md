@@ -3,22 +3,25 @@
 [![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/T475858)
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
-<!-- default file list -->
-*Files to look at*:
 
-* [Form1.cs](./CS/WinViewer_DefaultParameterValues/Form1.cs) (VB: [Form1.vb](./VB/WinViewer_DefaultParameterValues/Form1.vb))
-<!-- default file list end -->
-# How to Specify Default Parameter Values for the Dashboard Loaded in the WinForms Viewer
+# Dashboard for WinForms - Specify Default Parameter Values for the Dashboard Loaded in the WinForms Viewer
 
 
 This example demonstrates how to specify default parameter values when loading a dashboard.
 
-Handle the [DashboardLoaded](https://docs.devexpress.com/Dashboard/DevExpress.DashboardWin.DashboardViewer.DashboardLoaded) event, use the  [e.Dashboard](https://docs.devexpress.com/Dashboard/DevExpress.DashboardWin.DashboardLoadedEventArgs.Dashboard) property to get access to the dashboard and specify values in the [Dashboard.Parameters](https://docs.devexpress.com/Dashboard/DevExpress.DashboardCommon.Dashboard.Parameters) collection.
+## Files to Look At
+
+<!-- default file list -->
+
+* [Form1.cs](./CS/WinViewer_DefaultParameterValues/Form1.cs) (VB: [Form1.vb](./VB/WinViewer_DefaultParameterValues/Form1.vb))
+<!-- default file list end -->
+
+## Example Overview
+
+Handle the [SetInitialDashboardState](https://docs.devexpress.com/Dashboard/DevExpress.DashboardWin.DashboardViewer.SetInitialDashboardState) event, use the [DashboardParameterState](https://docs.devexpress.com/Dashboard/DevExpress.DashboardCommon.DashboardParameterState) object's properties to specify parameter values. Add the specified dashboard parameters to the [Dashboard.Parameters](https://docs.devexpress.com/Dashboard/DevExpress.DashboardCommon.Dashboard.Parameters) collection.
 
 See also:
 *  [How to Pass a Hidden Dashboard Parameter to a Custom SQL query](https://github.com/DevExpress-Examples/how-to-pass-a-hidden-dashboard-parameter-to-a-custom-sql-query-in-the-winforms-viewer-t338459)
-
-
 
 ![screenshot](/images/screenshot.png)
 
