@@ -11,9 +11,13 @@ Namespace WinViewer_DefaultParameterValues
 			InitializeComponent()
 		End Sub
 
-		Private Sub dashboardViewer1_DashboardLoaded(ByVal sender As Object, ByVal e As DashboardLoadedEventArgs) Handles dashboardViewer1.DashboardLoaded
-			' Specifies default parameter values.
-			e.Dashboard.Parameters("customerIdParameter").Value = New List(Of String)() From {"ALFKI", "AROUT", "BONAP"}
+		Private Sub dashboardViewer1_SetInitialDashboardState(ByVal sender As Object, ByVal e As SetInitialDashboardStateEventArgs)
+			Dim state As New DashboardState()
+			Dim parameters As New DashboardParameterState()
+			parameters.Name = "customerIdParameter"
+			parameters.Value = New List(Of String)() From {"ALFKI", "AROUT", "BONAP"}
+			state.Parameters.Add(parameters)
+			e.InitialState = state
 		End Sub
 
 		Private Sub dashboardViewer1_ConfigureDataConnection(ByVal sender As Object, ByVal e As DashboardConfigureDataConnectionEventArgs) Handles dashboardViewer1.ConfigureDataConnection
