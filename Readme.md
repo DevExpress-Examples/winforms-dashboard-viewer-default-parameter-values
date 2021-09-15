@@ -18,7 +18,8 @@ This example demonstrates how to specify default parameter values when loading a
 
 ## Example Overview
 
-Handle the [SetInitialDashboardState](https://docs.devexpress.com/Dashboard/DevExpress.DashboardWin.DashboardViewer.SetInitialDashboardState) event, use the [DashboardParameterState](https://docs.devexpress.com/Dashboard/DevExpress.DashboardCommon.DashboardParameterState) object's properties to specify parameter values. Add the specified dashboard parameters to the [Dashboard.Parameters](https://docs.devexpress.com/Dashboard/DevExpress.DashboardCommon.Dashboard.Parameters) collection.
+Handle the [SetInitialDashboardState](https://docs.devexpress.com/Dashboard/DevExpress.DashboardWin.DashboardViewer.SetInitialDashboardState) event. Create a [DashboardParameterState](https://docs.devexpress.com/Dashboard/DevExpress.DashboardCommon.DashboardParameterState) instance and use its `Name` and `Value` properties to configure parameter values. Create a [DashboardState](https://docs.devexpress.com/Dashboard/DevExpress.DashboardCommon.DashboardState) object and add the specified dashboard parameter to the [DashboardState.Parameters](https://docs.devexpress.com/Dashboard/DevExpress.DashboardCommon.DashboardState.Parameters) collection. Assign the created `DashboardState` object to the [SetInitialDashboardStateBaseEventArgs.InitialState](https://docs.devexpress.com/Dashboard/DevExpress.DashboardCommon.SetInitialDashboardStateBaseEventArgs.InitialState) property to apply specified parameter values when a dashboard is loading.
+
 
 See also:
 *  [How to Pass a Hidden Dashboard Parameter to a Custom SQL query](https://github.com/DevExpress-Examples/how-to-pass-a-hidden-dashboard-parameter-to-a-custom-sql-query-in-the-winforms-viewer-t338459)
