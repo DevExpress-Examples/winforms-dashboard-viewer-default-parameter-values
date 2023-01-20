@@ -9,22 +9,16 @@
 
 This example demonstrates how to specify default parameter values when loading a dashboard.
 
-## Files to Look At
-
-<!-- default file list -->
-
-* [Form1.cs](./CS/WinViewer_DefaultParameterValues/Form1.cs) (VB: [Form1.vb](./VB/WinViewer_DefaultParameterValues/Form1.vb))
-<!-- default file list end -->
-
 ## Example Overview
 
 Handle the [SetInitialDashboardState](https://docs.devexpress.com/Dashboard/DevExpress.DashboardWin.DashboardViewer.SetInitialDashboardState) event. Create a [DashboardParameterState](https://docs.devexpress.com/Dashboard/DevExpress.DashboardCommon.DashboardParameterState) instance and use its `Name` and `Value` properties to configure parameter values. Create a [DashboardState](https://docs.devexpress.com/Dashboard/DevExpress.DashboardCommon.DashboardState) object and add the specified dashboard parameter to the [DashboardState.Parameters](https://docs.devexpress.com/Dashboard/DevExpress.DashboardCommon.DashboardState.Parameters) collection. Assign the created `DashboardState` object to the [SetInitialDashboardStateBaseEventArgs.InitialState](https://docs.devexpress.com/Dashboard/DevExpress.DashboardCommon.SetInitialDashboardStateBaseEventArgs.InitialState) property to apply specified parameter values when a dashboard is loading.
 
-
-See also:
-*  [How to Pass a Hidden Dashboard Parameter to a Custom SQL query](https://github.com/DevExpress-Examples/how-to-pass-a-hidden-dashboard-parameter-to-a-custom-sql-query-in-the-winforms-viewer-t338459)
-
 ![screenshot](/images/screenshot.png)
+
+
+## Files to Review
+
+* [Form1.cs](./CS/WinViewer_DefaultParameterValues/Form1.cs) (VB: [Form1.vb](./VB/WinViewer_DefaultParameterValues/Form1.vb))
 
 ## Documentation
 
